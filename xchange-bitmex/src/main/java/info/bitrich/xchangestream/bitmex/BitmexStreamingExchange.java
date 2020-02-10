@@ -58,6 +58,10 @@ public class BitmexStreamingExchange extends BitmexExchange implements Streaming
         return spec;
     }
 
+    public BitmexStreamingService getStreamingService() {
+        return streamingService;
+    }
+
     @Override
     public StreamingMarketDataService getStreamingMarketDataService() {
         return streamingMarketDataService;
